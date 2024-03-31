@@ -12,3 +12,11 @@ def status():
     if request.method == 'GET':
         response = {"status": "OK"}
         return jsonify(response)
+
+@app_view.route('/stat', methods=['GET'])
+def stats():
+    """
+    Returns Number of each objects by type
+    """
+    if request.method == 'GET':
+
