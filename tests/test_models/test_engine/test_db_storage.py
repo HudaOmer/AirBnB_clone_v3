@@ -119,4 +119,4 @@ class TestFileStorage(unittest.TestCase):
         store.new(stt4)
         store.save()
         assert store.count(State) == 4
-        assert store.count() == 4 
+        assert store.count() == 4
