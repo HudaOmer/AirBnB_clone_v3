@@ -103,7 +103,7 @@ class BaseModel:
         models.storage.new(self)
         models.storage.save()
 
-    def to_json(self, saving_file_storage=False):
+    def to_dict(self, saving_file_storage=False):
         """
             it returns json representation of self
         """
