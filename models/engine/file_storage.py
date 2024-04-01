@@ -21,8 +21,11 @@ class FileStorage:
     # dictionary - empty but will store all objects by <class name>.id
     __objects = {}
 
-    classes = {"Amenity": Amenity, "City": City,
-           "Place": Place, "Review": Review, "State": State, "User": User}
+    classes = {
+        "Amenity": Amenity, "City": City,
+        "Place": Place, "Review": Review,
+        "State": State, "User": User
+    }
 
     def all(self, cls=None):
         """returns the dictionary __objects"""
